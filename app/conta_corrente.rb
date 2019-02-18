@@ -2,7 +2,10 @@ require_relative '../app/conta'
 
 class ContaCorrente < Conta
   def initialize(saldo_inicial, limite = 700)
-    self.saldo = saldo_inicial
-    self.limite = limite
+    super
+  end
+
+  def saca(valor, taxa = 5.00)
+    super
   end
 end

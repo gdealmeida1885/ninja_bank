@@ -8,7 +8,7 @@ describe 'Saque Conta Poupanca' do
     end
 
     it 'deve atualizar o saldo' do
-      expect(@conta_poupanca.saldo).to eql 800.00
+      expect(@conta_poupanca.saldo).to eql 798.00
     end
   end
   context 'saldo zero na conta' do

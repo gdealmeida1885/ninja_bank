@@ -1,7 +1,7 @@
 
 require_relative '../app/conta_corrente'
 
-describe 'Saque' do
+describe 'Saque Conta Corrente' do
   context 'saque com saldo positivo' do
     before(:all) do
       @conta_corrente = ContaCorrente.new(1000.0)
@@ -9,7 +9,7 @@ describe 'Saque' do
     end
 
     it 'deve atualizar o saldo' do
-      expect(@conta_corrente.saldo).to eql 800.00
+      expect(@conta_corrente.saldo).to eql 795.00
     end
   end
   context 'saldo zero na conta' do
